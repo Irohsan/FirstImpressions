@@ -16,30 +16,30 @@ if(isset($_POST["name"])){
   $name = $_POST["name"];
   $email = $_POST["email"];
   $password = $_POST["password"];
- 
+
   $add = "INSERT INTO profile_tbl (name, email, password) VALUES ('$name', '$email','$password')";
-  
+
   if($conn->query($add) === TRUE)
   {
     echo "<h1> thanks for submitting! </h1>";
   }
   $conn->close();
-  
+
   /* comments tbl */
-  
+
   /* trophy tbl */
-  
+
   /* earns tbl */
-  
+
   /* messages tbl */
-  
+
   /* type of account tbl */
-  
+
   /* Post */
-  
-  /* favorites */ 
+
+  /* favorites */
   }
-  
+
 ?>
 
 <form name="myform" action = "sql.php" method = "POST">
