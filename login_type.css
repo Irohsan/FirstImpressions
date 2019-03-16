@@ -1,0 +1,41 @@
+body
+{
+    background: url(abstract-art-celebration-750843.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;    
+}
+
+#login_pannel
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 25px;
+    padding-bottom: 20%;
+}
+
+#title
+{
+    color:white;
+}
+
+#login_title
+{
+    color:white;
+    margin-top: 5px;
+}
+.label
+{
+    margin-left: 5px;
+    color:white;
+    padding-left: 41%;
+}
+.categorytitles
+{
+    color:red;
+}
+#submit
+{
+    margin-left: 400px;
+}

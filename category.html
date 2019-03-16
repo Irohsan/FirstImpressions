@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Categories</title>
+<link href = "https://fonts.googleapis.com.css?
+                  family = PlayFair Display" rel = "stylesheet">
+<link rel = "stylesheet" type = "text/css" href="category.css">
+<script>
+function redirect()
+            {
+                window.location.replace("homepage.html");
+            }    
+function select()
+            {
+                window.location.replace("feed.php");
+            }    
+</script>
+</head>
+<body>
+    <h1 class = "banner_title" onclick="redirect()">First Impressions</h1>
+    <section id="category_pannel">
+        <h1 class = "title">Select a <span class = "emphasis">Category</span></h1>
+        <br>
+        <br>
+        <div class = "category_holder" id="h1" onclick="select()">
+            <h2>Food</h2>
+        </div>
+        <br>
+        <div class = "category_holder" id="h2" onclick="select()">
+            <h2>People</h2>
+        </div>
+        <br>
+        <div class = "category_holder" id="h3" onclick="select()">
+            <h2>Travel</h2>
+        </div>
+        <br>
+        <div class = "category_holder" id="h4" onclick="select()">
+            <h2>Music</h2>
+        </div>
+        <br>
+        <br>
+        <br>
+    </section>
+</body>
+
+</html>

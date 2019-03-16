@@ -1,0 +1,84 @@
+body
+{
+    background-color: #a5d6ef;
+}
+#category_pannel
+{
+    margin-left: 450px;
+    margin-righT: 450px;
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.title
+{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.emphasis
+{
+    color:red;
+}
+.category_pannel_cont
+{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.category_holder
+{
+    color:red;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-left: 50px;
+    margin-right: 50px;
+    width:85%;
+    height: 25%;
+}
+
+#h1
+{
+
+    background: url(anise-aroma-art-277253.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;    
+}
+
+#h2 
+{
+    background: url(backlit-bright-dawn-697243.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-position: center; 
+}
+
+#h3
+{
+    background: url(timothy-ries-195501.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-position: center; 
+}
+
+#h4
+{
+    background: url(audio-cassette-cassette-tape-1626481.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-position: center; 
+}
+    
+.banner_title
+{
+    color:white;
+}
+.category_holder:hover, .category_holder:focus
+{
+    border: 1px solid white;
+    outline-style: solid;
+    outline-color: white;
+}
+.banner_title:hover, .banner_title:focus
+{
+    color: red;
+}
+

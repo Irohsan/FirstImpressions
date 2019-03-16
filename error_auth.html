@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login!</title>
+    <link rel = "stylesheet" type = "text/css" href="login_type.css">
+    <script>
+    function redirect()
+            {
+                window.location.replace("homepage.html");
+            }    
+    </script>
+</head>
+<body>
+   <h1 id="title" onclick="redirect()">First Impressions</h1>
+   <h1 align= "center" id="login_title">Login to First Impressions</h1>
+   <h2 align="center" style="color:red;">Incorrect Username or Password</h2>
+   <section id="login_pannel">
+   <form action="login.php" method="post">
+       <br>
+       <br>
+       <br>
+      <h1 align = center class="categorytitles"> Username: </h1>
+      <label class="label">				   
+      <input type="text" name=username>
+      </label>
+      <br>
+      <h1 align = center class="categorytitles"> Password: </h1>
+      <label class = "label">
+      <input type="password" name=password>
+      </label>
+      <br>
+      <br>
+      <input type="submit" value="Login" id="submit">
+   </form>
+   </section>
+</body>
+</html>
