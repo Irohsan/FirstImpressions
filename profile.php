@@ -2,7 +2,7 @@
     include_once('utility.php');
     include_once('post.php');
     
-    class profile
+    class Profile
     {
         // The user that this object references if any. 
         private $user = null;
@@ -24,7 +24,7 @@
         ******************************************************************************/
         public function __construct( $username )
         {
-            $this->fetchUser( $username ); 
+            $user = $this->fetchUser( $username ); 
         }
         
         /******************************************************************************
@@ -147,7 +147,7 @@
         public function validatePassword( $password )
         {
             $pass = $this->getPassword();
-            
+
             if( $password == $pass )
             {
                 return true;
@@ -281,7 +281,6 @@
         ******************************************************************************/
         public function createPost( $post_text, $post_title, $category_id, $picture = null )
         {
-            echo"here";
             $this->post->createPost( $post_text, $this->user, $post_title, $category_id, $picture );
         }
         

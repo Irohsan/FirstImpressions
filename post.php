@@ -46,7 +46,7 @@
         // Sets the text for the post_id of this object.
         public function setText( $text )
         {
-            alterTable( $this->table, 'post_text', $text, $this->targetCurrentID );
+            alterTable( $this->table, 'post_text', $text, "WHERE post_id = '$this->post_id'" );
         }
         
         // Gets the date the post was uploaded.
@@ -58,17 +58,17 @@
         }
         
         // Gets the photo stored in the DB.
-        /*public function getPhoto()
+        public function getPhoto()
         {
-            $results = queryDatabase( $this->table, 'picture', "WHERE post_id = '$this->post_id'");
+            $results = queryDatabase( $this->table, 'picture', "WHERE post_id = '$this->post_id'", 1);
+            $result = mysqli_fetch_array( $results );
             
-            echo "<img src=". $results['picture'] .">";
-        }*/
-        
+            echo '<img src="data:image/jpeg;base64,'.base64_encode( $result['picture'] ).'"/>';
+        }
         // Sets the photo stored in the DB.
-        public function setPhoto( $picture )
+        public function setPhoto( $image )
         {
-            alterTable( $this->table, 'picture', $picture, $this->targetCurrentID );
+            alterTable( $this->table, 'picture', "/public_html".$file_name, "WHERE post_id = '$this->post_id'" );
         }
         
         // Gets the title for the current post_id.
@@ -82,7 +82,7 @@
         // Sets the title for the current post_id.
         public function setTitle( $title )
         {
-            alterTable( $this->table, 'post_title', $title, $this->targetCurrentID );   
+            alterTable( $this->table, 'post_title', $title, "WHERE post_id = '$this->post_id'" );   
         }
         
         // Gets the upvotes for the current post_id.
@@ -146,7 +146,7 @@
         // Gets the user.
         public function getUser()
         {
-            $results = queryDatabase( $this->table, 'username', $this->targetCurrentID );
+            $results = queryDatabase( $this->table, 'username', "WHERE post_id = '$this->post_id'" );
             
             return $results['username'];
         }
@@ -165,7 +165,7 @@
         // Changes the category of the post.
         public function changeCategory( $newCategory )
         {
-            alterTable( $this->table, 'category_id', $newCategory, $this->targetCurrentID );
+            alterTable( $this->table, 'category_id', $newCategory, "WHERE post_id = '$this->post_id'" );
         }
         
         // Deletes the post.

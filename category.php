@@ -1,10 +1,12 @@
 <?php
     include_once('utility.php');
 
-    class category
+    class Category
     {
         // Field variable for the table that this class references.
         private $table = 'category';
+        
+        public function __construct(){}
         
        /******************************************************************************
         * Method: createCategory
