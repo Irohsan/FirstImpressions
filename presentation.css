@@ -43,9 +43,8 @@ h1{
 }
 
 p{
-	color: ;
 	margin-left: 15%;
-	background-color: #877FFF;
+
 }
 h2{
 	color: #000000;
@@ -59,7 +58,6 @@ div{
 	text-align: center;
 }
 .categories{
-	font-size: 16px;
 	margin: auto;
 	overflow: hidden;
 	float: left;
@@ -104,4 +102,16 @@ a.post:link{
 	text-align: center;
 	color: black;
 	text-decoration: none;
+}
+img {
+	padding: 0px 90px;
+}
+#text{
+	position: relative;
+	top: -450px;
+	color: white;
+	left: 200px;
+	width: 900px;
+	font-size: 30px;
+	
 }
