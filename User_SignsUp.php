@@ -3,19 +3,19 @@ include 'utility.php';
 
 class User_SignsUp 
 {
-
-public $name = $_POST["name"];
-public $email = $_POST["email"];
-public $emailC = $_POST["emailC"];
-public $password = $_POST["password"];
-public $passwordC = $_POST["passwordC"];
+$message_error
+$name = $_POST["name"];
+$email = $_POST["email"];
+$emailC = $_POST["emailC"];
+$password = $_POST["password"];
+$passwordC = $_POST["passwordC"];
  
   function EmptyBoxes()
   {
   	if(empty($_POST["name"]) || empty($_POST["email"]) || empty($_POST["emailC"]) || 
   					empty($_POST["password"]) || empty($_POST["passwordC"]))
   	{
-  		$name_error = "Please fill out the empty box/boxes";
+  		$message_error = "Please fill out the empty box/boxes";
   		return false;
  	}
  	return true;
