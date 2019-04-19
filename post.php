@@ -38,7 +38,7 @@
         // Returns the text associated with the post_id of this object.
         public function getText()
         {
-            $results = queryDatabase( $this->table, 'post_text', $this->targetCurrentID );
+            $results = queryDatabase( $this->table, 'post_text', "WHERE post_id = '$this->post_id'" );
             
             return $results['post_text'];
         }
@@ -63,7 +63,7 @@
             $results = queryDatabase( $this->table, 'picture', "WHERE post_id = '$this->post_id'", 1);
             $result = mysqli_fetch_array( $results );
             
-            echo '<img src="data:image/jpeg;base64,'.base64_encode( $result['picture'] ).'"/>';
+            echo '<img src="data:image/jpeg;base64,'.base64_encode( $result['picture'] ).'" id = "pic"/>';
         }
         // Sets the photo stored in the DB.
         public function setPhoto( $image )
@@ -74,7 +74,7 @@
         // Gets the title for the current post_id.
         public function getTitle()
         {
-            $results = queryDatabase( $this->table, 'post_title', $this->targetCurrentID );
+            $results = queryDatabase( $this->table, 'post_title', "WHERE post_id = '$this->post_id'" );
             
             return $results['post_title'];
         }
@@ -88,7 +88,7 @@
         // Gets the upvotes for the current post_id.
         public function getUpvotes()
         {
-            $results = queryDatabase( $this->table, 'upvotes', $this->targetCurrentID );
+            $results = queryDatabase( $this->table, 'upvotes', "WHERE post_id = '$this->post_id'" );
             
             return $results['upvotes'];
         }
@@ -96,7 +96,7 @@
         // Gets the downvotes for the current post_id.
         public function getDownvotes()
         {
-            $results = queryDatabase( $this->table, 'downvotes', $this->targetCurrentID );
+            $results = queryDatabase( $this->table, 'downvotes', "WHERE post_id = '$this->post_id'" );
             
             return $results['downvotes'];
         }
