@@ -5,9 +5,8 @@ include 'utility.php';
 class User_login
 {
 
-$name_error;
-$password_error;
-
+$name = $_POST["name"];
+$password = $_POST["password"];
   
   function EmptyBoxes()
   {
@@ -20,37 +19,28 @@ $password_error;
  	
   }
  
- function nameExisting($name)
+ function nameExisting()
  {
  	$query = queryDatabase('profile_tbl','name',"WHERE name=$name", 1);
- 	if($name != $query)
- 	{
- 		$name_error = "User not found";
- 		return false;
- 	}
- 	return true
- 	
+ 	return checkExisting($name, $query);	
  }
  
- function passwordExisting($password)
+ function passwordExisting()
  {
  	$query = queryDatabase('profile_tbl','password',"WHERE password=$password", 1);
- 	if ($password != $query)
- 	{
- 		$password_error = "password not correct";	
- 		return false;
- 	}
- 	return true;
+ 	return checkExisting($password, $query);
 	
  }
  
- function login($name, $pasword)
+ //rechecking
+ function login()
  {
- 	if (nameExisting($name) == true && passwordExisting($password) == true)
+ 	if (nameExisting() == true && passwordExisting() == true)
  	{
- 		
+		$profile_Link = "cefns.nau.edu/~ma2594/User_login.php/". $name;
+		echo "<a href = '" . $profile_Link . "'>" . "</a>";
  	} 
- 	
+ }	
  	
  		
 
