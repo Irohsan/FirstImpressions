@@ -1,0 +1,241 @@
+.title
+{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.input_title
+{
+    margin-left: 25px;
+    margin-top: 25px;
+    display: inline;
+    color: white;
+}
+
+#create_pannel
+{
+    background-color: rgba(0, 0, 0, .5);
+    margin-right: 500px;
+    margin-left: 500px;
+}
+
+.form_btn2
+{
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+    height: 100px;
+    margin-left: 150px;
+}
+
+.form_btn
+{
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+}
+
+#toggle_quiz
+{
+    margin-left: 350px;
+    background-color: lightcoral;
+    border-radius: 25px;
+    border: none;
+    height: 35px;
+    width: 125px;
+    display: inline;
+}
+
+#toggle
+{
+    margin-left: 350px;
+    background-color: lightblue;
+    border-radius: 25px;
+    border: none;
+    height: 35px;
+    width: 125px;
+    display:none;
+}
+
+#quest, #quest_box
+{
+    display: none;
+}
+
+#quest_answer, #quest_ans_box
+{
+    display: none;
+}
+
+#quest_pot_answer, #quest_pot_ans_box
+{
+    display: none;
+}
+
+.submit
+{
+    margin-left: 350px;
+    background-color: lightblue;
+    border-radius: 25px;
+    border: none;
+    height: 35px;
+    width: 125px;
+    display: inline;
+}
+
+#toggle:hover
+{
+    background-color: lightcoral;
+    color: white;
+}
+
+#toggle_quiz:hover
+{
+    background-color: greenyellow;
+}
+
+.submit:hover
+{
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+}
+
+#exit
+{
+    margin-left: 700px;
+    background-color: white;
+    border-radius: 25px;
+    border: none;
+    height: 35px;
+    width: 125px;
+    display: inline;   
+}
+
+#exit:hover
+{
+    background-color: black;
+    color: white;
+}
+
+#background
+{
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    margin:0px;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+
+}
+
+#login
+{
+    font-size: 16px;
+    float: right;
+    height: 15px;
+    width: 100px;
+    padding: 14px 16px;
+    margin-right: 100px;
+    border-radius: 5px;
+    background-color: lightblue;
+    text-align: center;
+    margin-top: 14px;
+    
+}
+
+#logout
+{
+    margin-top: 20px;
+    font-size: 16px;
+    float: right;
+    height: 15px;
+    width: 100px;
+    padding: 14px 16px;
+    margin-right: 100px;
+    border-radius: 5px;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+}
+
+#login:hover
+{
+    color:black;
+}
+
+#logout:hover
+{
+    background-color: lightblue;
+}
+
+
+nav
+{
+    margin:0px;
+    background-color: black;
+    font-size: 36px;
+    color: white;
+    object-fit: cover;
+    overflow: hidden;
+}
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: right;
+  overflow: hidden;
+  margin-right: 250px;
+  margin-top: 20px;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 26px;
+}
+
+.dropbtn:hover
+{
+    background-color: white;
+    color: black;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
